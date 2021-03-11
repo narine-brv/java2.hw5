@@ -28,7 +28,6 @@ public class Main {
         Collections.reverse(listB);
         print(listB);
 
-        System.out.println("Список С: ");
         iteratorA = listA.iterator();
         iteratorB = listB.iterator();
 
@@ -47,9 +46,9 @@ public class Main {
     public static void print (ArrayList <?> list) {
         Iterator <?> iterator = list.iterator();
         while (iterator.hasNext()){
-            System.out.println("[" + iterator.next() + "]");
+            System.out.print("[" + iterator.next() + "]");
         }
-        System.out.println("-----------------");
+        System.out.println("\n-----------------");
     }
 
 
@@ -59,7 +58,7 @@ public class Main {
         for (int i = 0; i < 5; i++) {
             list.add(scanner.nextLine());
         }
-        
+
     }
 
 }
